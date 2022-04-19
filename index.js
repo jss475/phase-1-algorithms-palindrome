@@ -1,10 +1,33 @@
 function isPalindrome(word) {
   // Write your algorithm here
+
+  //initialize new array
+  let reversedWord = []
+  debugger
+  //reverse the word
+  for(let i=0; i < word.length; i++){
+    reversedWord[word.length-(i+1)] = word[i]
+  }
+  if(reversedWord.join('') === word){
+    return true
+  }else {
+    return false
+  }
+
+
+
 }
 
+isPalindrome('mom')
 /* 
   Add your pseudocode here
 */
+
+//take in word
+//reverse the word
+//check if the reversed word equals input word
+
+
 
 /*
   Add written explanation of your solution here
